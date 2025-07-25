@@ -1,0 +1,24 @@
+{
+  "name": "aplicativo_climatico",
+  "version": "1.0.0",
+  "description": "Este proyecto consiste en el desarrollo de un aplicativo web de monitoreo climático utilizando tecnologías como Node.js, HTML, CSS y JavaScript.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarenAmor/aplicativo_climatico.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarenAmor/aplicativo_climatico/issues"
+  },
+  "homepage": "https://github.com/KarenAmor/aplicativo_climatico#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
