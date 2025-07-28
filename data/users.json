@@ -7,5 +7,11 @@
     "city": "Medellín",
     "age": "20",
     "gender": "femenino"
+  },
+  {
+    "name": "Add your name in the body"
+  },
+  {
+    "nombre": "Karen"
   }
 ]

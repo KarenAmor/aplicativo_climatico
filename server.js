@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Rutas de la API
-app.use('/api/usuarios', usuarioRoutes);
+app.use('/api/users', usuarioRoutes);
 
 
 // Iniciar servidor

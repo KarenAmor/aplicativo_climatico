@@ -1,14 +1,16 @@
 const fs = require('fs');
 const path = require('path');
+
 const rutaUsuarios = path.join(__dirname, '../data/users.json');
 
+// GET
 const obtenerUsuarios = (req, res) => {
   const data = fs.readFileSync(rutaUsuarios);
   const usuarios = JSON.parse(data);
   res.json(usuarios);
 };
 
-
+// POST
 const agregarUsuario = (req, res) => {
   const nuevoUsuario = req.body;
   const data = fs.readFileSync(rutaUsuarios);
@@ -17,10 +19,10 @@ const agregarUsuario = (req, res) => {
   usuarios.push(nuevoUsuario);
   fs.writeFileSync(rutaUsuarios, JSON.stringify(usuarios, null, 2));
 
-  res.status(201).json({ mensaje: 'Usuario agregado' });
+  res.status(201).json({ mensaje: 'Usuario agregado correctamente' });
 };
 
 module.exports = {
   obtenerUsuarios,
-  agregarUsuario
+  agregarUsuario,
 };

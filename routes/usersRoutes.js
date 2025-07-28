@@ -1,8 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const usuarioController = require('../controllers/usersController');
+const usersController = require('../controllers/usersController');
 
-router.post('/', usuarioController.obtenerUsuarios);
-router.post('/', usuarioController.agregarUsuario)
+// GET: listar usuarios
+router.get('/', usersController.obtenerUsuarios);
+
+// POST: agregar usuario
+router.post('/', usersController.agregarUsuario);
 
 module.exports = router;
