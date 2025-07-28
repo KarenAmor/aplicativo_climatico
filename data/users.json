@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "nombre": "Brayan",
+    "password": "luna",
+    "id": 0.16720306032441867,
+    "documento": "1034917966",
+    "city": "Medellín",
+    "age": "20",
+    "gender": "femenino"
+  }
+]
