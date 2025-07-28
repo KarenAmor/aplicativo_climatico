@@ -8,6 +8,7 @@ const obtenerUsuarios = (req, res) => {
   res.json(usuarios);
 };
 
+
 const agregarUsuario = (req, res) => {
   const nuevoUsuario = req.body;
   const data = fs.readFileSync(rutaUsuarios);

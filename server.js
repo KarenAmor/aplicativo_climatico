@@ -11,6 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Rutas de la API
 app.use('/api/usuarios', usuarioRoutes);
 
+
 // Iniciar servidor
 const PORT = 3000;
 app.listen(PORT, () => {
